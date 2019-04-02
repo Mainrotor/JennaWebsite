@@ -1,0 +1,124 @@
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  padding-top: 3vw;
+
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+#TopBarContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50%;
+  width: 70%;
+  border-color: black;
+  border-style: solid;
+  margin: auto;
+  border-width: 2px;
+
+}
+
+#TopBarContainer:hover {
+
+}
+
+
+#TopBar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#NodeOne {
+  height: 15vw;
+  width: 100%;
+}
+
+.TopBarNodes {
+display: flex;
+flex-direction: row;
+width: 100%;
+justify-content: center;
+
+}
+
+#JennaPicDiv {
+  display: flex;
+  align-content: center;
+  width: 15vw;
+  height: 15vw;
+  border-color: black;
+}
+
+#JennaPic {
+  height: 15vw;
+  width: 15vw;
+
+}
+
+#NodeTwo {
+  height: 2.5vw;
+  margin-bottom: 20px;
+
+}
+
+#HeroState {
+  font-family: proxima-nova;
+  font-weight: 600;
+  font-style: normal;
+  margin-top: -0.5vw;
+  font-size: 2.5vw;
+}
+
+
+#NavBar {
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  font-family: proxima-nova;
+  width: 30%;
+  height: 100%;
+
+}
+
+#NavBar > a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.5vw;
+  position: relative;
+}
+
+#NavBar > a:hover {
+  color: black;
+}
+
+#NavBar > a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+#NavBar > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
